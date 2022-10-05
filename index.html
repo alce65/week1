@@ -12,13 +12,22 @@
     </head>
     <body>
         <header>
-            <h1>HTML</h1>
+            <hgroup>
+                <h1>Learning HTML</h1>
+                <h2>Un análisis del HTML</h2>
+            </hgroup>
             <nav>
                 <a href="./contactos.html">Contactos</a>
             </nav>
         </header>
         <section>
-            <h2>Tipos de etiquetas</h2>
+            <header>
+                <h2>
+                    <span>Tipos de etiquetas</span>
+                    <div>Subtitulo</div>
+                </h2>
+            </header>
+
             <ul>
                 <li>Sectioning y grouping (block)</li>
                 <li>Text-level semantics y Links (in-line)</li>
@@ -44,10 +53,81 @@
                 allowfullscreen
             ></iframe>
         </article>
+        <dialog>Esto no se ve</dialog>
         <form>
-            <input type="text" name="" id="" placeholder="Dime tu nombre" />
+            <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Dime tu nombre"
+                autocomplete="off"
+                minlength="3"
+            />
+            <input type="checkbox" name="isOk" id="isOk" required />
+            <label for="isOk">Estoy de acuerdo</label>
+            <div>
+                <input
+                    type="radio"
+                    name="turno"
+                    id="t1"
+                    value="m"
+                    required
+                /><label for="t1">mañana</label>
+                <input type="radio" name="turno" id="t2" value="t" /><label
+                    for="t2"
+                    >tarde</label
+                >
+                <input type="radio" name="turno" id="t3" value="n" /><label
+                    for="t3"
+                    >noche</label
+                >
+            </div>
+            <select name="curso" id="" required>
+                <option value=""></option>
+                <option value="A">Angular</option>
+                <option value="R">React</option>
+            </select>
+
+            <button type="submit">Enviar</button>
         </form>
+        <article>
+            <details>
+                <summary>Titulo</summary>
+                <pre>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Minima vero temporibus, fuga assumenda quam sint id ab magni
+                    a est officiis quis impedit voluptate vitae? Reprehenderit
+                    magnam corporis provident molestias?
+                </pre>
+                <p>
+                    Ratione modi animi tenetur reiciendis velit, corrupti eos
+                    ad, voluptatum earum, voluptate laudantium. Perferendis
+                    dolorum voluptates ab, vero deserunt, ratione eveniet
+                    repudiandae ullam facere inventore error autem, accusamus
+                    optio cum?
+                </p>
+                <p>
+                    Excepturi culpa quasi nobis odio quia doloremque voluptate
+                    dolorem vitae, error adipisci itaque corporis consectetur
+                    esse asperiores inventore maxime nam omnis dolorum quas
+                    numquam? Magni esse sed reiciendis id autem?
+                </p>
+                <p>
+                    Ut dolor hic officia quae nihil? Atque nemo quo consequuntur
+                    minima beatae, doloremque mollitia labore distinctio sunt
+                    soluta vero ab non praesentium quasi nostrum tempore dicta
+                    cupiditate blanditiis, omnis rem.
+                </p>
+                <p>
+                    In, corporis nisi, ducimus velit aliquid incidunt quam, nam
+                    laboriosam dolorum assumenda magni illum atque nemo iure
+                    porro? Vero tempore obcaecati porro deserunt omnis dolor
+                    sequi consequuntur fuga asperiores explicabo.
+                </p>
+            </details>
+        </article>
         <footer>
+            <header>Probando</header>
             <address>ISDI Coders</address>
         </footer>
     </body>
