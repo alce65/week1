@@ -1,3 +1,18 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100vh;
+}
+
+div {
+    height: 50%;
+}
+
 /* Selector de etiqueta*/
 
 h2 {
@@ -10,11 +25,12 @@ h2 {
 .estandar {
     font-size: 16px;
 }
-
 /* Selector de id : NO SE USA*/
 
 #id {
     font-size: 1rem;
+}
+[id='id'] {
 }
 
 /*Selectror de atributo*/
@@ -28,10 +44,17 @@ ul,
 ol {
     list-style: lower-alpha;
 }
-
-section p {
+.foo {
+}
+p.foo.foo.foo.foo {
 }
 
+section p {
+    color: brown;
+}
+p {
+    color: aqua;
+}
 section > p {
 }
 

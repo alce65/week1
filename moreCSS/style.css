@@ -1,0 +1,35 @@
+:root {
+    --color-primary: brown;
+    --font-primary: Arial, Helvetica, sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100vh;
+}
+
+html {
+    background-color: white;
+    /* The background of the root element becomes 
+    the background of the canvas and covers the entire canvas, 
+    anchored (for 'background-position') at the same point as 
+    it would be if it was painted only for the root element itself. 
+    The root element does not paint this background again. 
+    https://www.w3.org/TR/CSS21/colors.html
+    */
+}
+
+body {
+    background-color: var(--color-primary);
+    font-family: var(--font-primary);
+}
+
+p {
+    width: 50ch;
+}

@@ -1,0 +1,16 @@
+article {
+    position: relative;
+    z-index: 10;
+}
+
+.img-container {
+    width: clamp(300px, 60%, 950px);
+    border: 1px grey solid;
+    position: fixed;
+    top: 30px;
+    left: 100px;
+}
+
+.img-container img {
+    width: 100%;
+}
