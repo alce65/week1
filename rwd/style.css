@@ -1,6 +1,6 @@
 :root {
     --color-primary: brown;
-    --color-secondary: bisque;
+    --color-secondary: #ffe3c2;
     --font-primary: Arial, Helvetica, sans-serif;
 }
 
@@ -13,12 +13,17 @@
 html,
 body {
     min-height: 100vh;
+    background-color: white;
+    font-family: var(--font-primary);
 }
 
 body {
-    margin: 0;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
+    min-width: 300px;
+    background-color: bisque;
+    max-width: 1000px;
 }
 
 header,
@@ -29,6 +34,23 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+header {
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.menu {
+    display: none;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
 }
 
 main {
@@ -44,14 +66,34 @@ aside {
     padding: 1rem;
 }
 
-/* section {
-    flex: 2 0 auto;
-    margin-right: 0;
-    max-width: 70%;
+aside:target {
+    background-color: beige;
 }
 
-aside {
-    flex: 1 0 auto;
-    margin-left: 0;
-    max-width: 20%;
-} */
+@media screen and (min-width: 500px) {
+    .menu-icon {
+        display: none;
+    }
+
+    .menu {
+        display: initial;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    main {
+        display: flex;
+        gap: 1rem;
+    }
+    section {
+        flex: 2 0 auto;
+        margin-right: 0;
+        max-width: 70%;
+    }
+
+    aside {
+        flex: 1 0 auto;
+        margin-left: 0;
+        max-width: 20%;
+    }
+}
